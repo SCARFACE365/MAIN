@@ -1,0 +1,517 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tiger Martial Arts</title>
+		
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<style>
+		body{font-family: 'Gill Sans', 'Gill Sans MT'}
+		.navigation{height: 100px;background: #Ffff}
+		.image{height: 600px;background:  #213650; }
+		
+		
+		a{text-decoration: none;font-family: 'Gill Sans', 'Gill Sans MT';color: #00459A; padding: 20px;}
+		ul{list-style-type: none;display:flex;flex-direction: row;justify-content: center;}
+		li{padding-top:20px; }
+		.text1{font-family: 'Gill Sans', 'Gill Sans MT';font-size: 30px;color: #00459A;padding-top:40px;}
+		
+	
+		.image img{background-size:cover;}
+
+		.navigation img{float: left;}
+		.footer{display: flex;flex-direction: row;padding-top:40px;}
+		.logo{height: 250px;width:33.3%;background-color:  #00459A; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+		.Connect{height: 250px;width:33.3%;background-color:  #00459A;  color: #FFFFFF; font-family: 'Gill Sans', 'Gill Sans MT'; justify-content: center;text-align: center;}
+		.contact{height: 250px;width:33.3%;background-color:  #00459A;color: #FFFFFF;font-family: 'Gill Sans', 'Gill Sans MT';justify-content: center;text-align: center; }
+		
+		#text2 {padding: 40px;}
+		.card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+   
+
+
+.image1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+		#text2 {margin-left: 20px;}
+		
+
+
+
+#container1{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 350px;
+	width: 700px;
+  
+	
+}
+
+
+
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+
+#container1 .product-details h1{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	color: #344055;
+	margin: 0;
+	
+}
+
+#container1 .product-details h1:before{
+	position: absolute;
+	content: '';
+	right: 0%; 
+	top: 0%;
+	transform: translate(25px, -15px);
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	display: inline-block;
+	background: #ffe6e6;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: white;
+	margin: 0;
+	animation: chan-sh 6s ease infinite;
+
+}
+
+
+
+	
+
+
+.hint-star {
+	display: inline-block;
+	margin-left: 0.5em;
+	color: gold;
+	width: 50%;
+}
+
+
+#container1 .product-details > p {
+font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-align: center;
+	font-size: 18px;
+	color: #7d7d7d;
+	
+}
+.control{
+	position: absolute;
+	bottom: 20%;
+	left: 22.8%;
+	
+}
+.btn {
+
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background:  #fbcf53;
+	border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.btn:hover{transform: translateY(-6px);
+	background: #1a66ff;}
+
+.btn span {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	transition: transform 0.3s;
+	display: inline-block;
+  padding: 10px 20px;
+	font-size: 1.2em;
+	margin:0;
+	
+}
+.btn .price, .shopping-cart{
+	background: #333;
+	border: 0;
+	margin: 0;
+}
+
+.btn .price {
+	transform: translateX(-10%); padding-right: 15px;
+}
+
+.btn .shopping-cart {
+	transform: translateX(-100%);
+  position: absolute;
+	background: #333;
+	z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.btn .buy {z-index: 3; font-weight: bolder;}
+
+.btn:hover .price {transform: translateX(-110%);}
+
+.btn:hover .shopping-cart {transform: translateX(0%);}
+
+
+
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 45%;
+	display: inline-block;
+}
+
+#container1 img {width: 100%;height: 100%;}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 105%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {text-align: center}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1.3);}
+		.info ul {display: flex;flex-direction: column;}
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}
+	</style>
+</head>
+
+<body>
+<div class="navigation">
+	
+	<ul>
+		
+	<li><a href="index.html">HOME</a></li>
+		<li><a href="courses.html">PACKAGES&nbsp;</a></li>
+		<li><a href="instructors.html">INSTRUCTORS&nbsp;</a></li>
+		<li><a href="schedules.html">SCHEDULES&nbsp;</a></li>
+		<li><a href="contact.html">CONTACT</a></li>
+	
+	
+	</ul>
+	
+	
+	</div>
+	
+
+
+<div class="image1"> <img src="https://rhinofit.ca/wp-content/uploads/2024/07/Karate-jpg.webp" alt="Martial Arts Banner"/></div>
+ 
+
+	<center>
+	
+	<p id="text2">From tiny tigers to adult warriors, we have something for everyone! Our safe and encouraging environment helps students build confidence, respect, and fitness while having fun. Come join our martial arts family today!Our dynamic training programs are designed to push limits, build strength, and awaken the warrior spirit. Whether you're here to train, compete, or conquer — you belong with us.</p>
+	
+	
+	
+	
+	</center>
+	
+	
+	
+
+
+	<div id="container1">	
+	
+	<div class="product-details">
+		
+	<h1>MAURICIO GOMEZ</h1>
+	<span class="hint-star star">
+		Gym Owner / Head Martial Arts Coach
+	</span>
+		
+			<p class="information">Coaches in all martial arts,4th Dan Blackbelt judo,3rd Dan Blackbelt Jiu-jitsu,1st Dan Blackbelt Karate,Accredited Muay Thai Coach</p>
+
+		
+		
+<div class="control">
+	
+	<button class="btn">
+
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+   <span class="buy">Contact</span>
+ </button>
+	
+</div>
+			
+</div>
+	
+<div class="product-image">
+	
+	<img src="https://warrioracademy.ae/wp-content/uploads/2023/07/Warrior-Academy-Junior.jpg" alt="">
+	
+
+<div class="info">
+	
+	<ul>
+		
+		<li><strong>Availability :</strong>5:00 AM - 8:00 PM </li>
+		
+		
+		
+	</ul>
+</div>
+</div>
+	
+
+</div>
+	
+	<div id="container1">	
+	
+	<div class="product-details">
+		
+	<h1>MAURICIO GOMEZ</h1>
+	<span class="hint-star star">
+		Gym Owner / Head Martial Arts Coach
+	</span>
+		
+			<p class="information">Coaches in all martial arts,4th Dan Blackbelt judo,3rd Dan Blackbelt Jiu-jitsu,1st Dan Blackbelt Karate,Accredited Muay Thai Coach</p>
+
+		
+		
+<div class="control">
+	
+	<button class="btn">
+
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+   <span class="buy">Contact</span>
+ </button>
+	
+</div>
+			
+</div>
+	
+<div class="product-image">
+	
+	<img src="https://warrioracademy.ae/wp-content/uploads/2023/07/Warrior-Academy-Junior.jpg" alt="">
+	
+
+<div class="info">
+	
+	<ul>
+		
+		<li><strong>Availability :</strong>5:00 AM - 8:00 PM </li>
+		
+		
+		
+	</ul>
+</div>
+</div>
+	
+
+</div>
+	<div id="container1">	
+	
+	<div class="product-details">
+		
+	<h1>MAURICIO GOMEZ</h1>
+	<span class="hint-star star">
+		Gym Owner / Head Martial Arts Coach
+	</span>
+		
+			<p class="information">Coaches in all martial arts,4th Dan Blackbelt judo,3rd Dan Blackbelt Jiu-jitsu,1st Dan Blackbelt Karate,Accredited Muay Thai Coach</p>
+
+		
+		
+<div class="control">
+	
+	<button class="btn">
+
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+   <span class="buy">Contact</span>
+ </button>
+	
+</div>
+			
+</div>
+	
+<div class="product-image">
+	
+	<img src="https://warrioracademy.ae/wp-content/uploads/2023/07/Warrior-Academy-Junior.jpg" alt="">
+	
+
+<div class="info">
+	
+	<ul>
+		
+		<li><strong>Availability :</strong>5:00 AM - 8:00 PM </li>
+		
+		
+		
+	</ul>
+</div>
+</div>
+	
+
+</div>
+	<div id="container1">	
+	
+	<div class="product-details">
+		
+	<h1>MAURICIO GOMEZ</h1>
+	<span class="hint-star star">
+		Gym Owner / Head Martial Arts Coach
+	</span>
+		
+			<p class="information">Coaches in all martial arts,4th Dan Blackbelt judo,3rd Dan Blackbelt Jiu-jitsu,1st Dan Blackbelt Karate,Accredited Muay Thai Coach</p>
+
+		
+		
+<div class="control">
+	
+	<button class="btn">
+
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+   <span class="buy">Contact</span>
+ </button>
+	
+</div>
+			
+</div>
+	
+<div class="product-image">
+	
+	<img src="https://warrioracademy.ae/wp-content/uploads/2023/07/Warrior-Academy-Junior.jpg" alt="">
+	
+
+<div class="info">
+	
+	<ul>
+		
+		<li><strong>Availability :</strong>5:00 AM - 8:00 PM </li>
+		
+		
+		
+	</ul>
+</div>
+</div>
+	
+
+</div>
+	<div id="container1">	
+	
+	<div class="product-details">
+		
+	<h1>MAURICIO GOMEZ</h1>
+	<span class="hint-star star">
+		Gym Owner / Head Martial Arts Coach
+	</span>
+		
+			<p class="information">Coaches in all martial arts,4th Dan Blackbelt judo,3rd Dan Blackbelt Jiu-jitsu,1st Dan Blackbelt Karate,Accredited Muay Thai Coach</p>
+
+		
+		
+<div class="control">
+	
+	<button class="btn">
+
+   <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+   <span class="buy">Contact</span>
+ </button>
+	
+</div>
+			
+</div>
+	
+<div class="product-image">
+	
+	<img src="https://warrioracademy.ae/wp-content/uploads/2023/07/Warrior-Academy-Junior.jpg" alt="">
+	
+
+<div class="info">
+	
+	<ul>
+		
+		<li><strong>Availability :</strong>5:00 AM - 8:00 PM </li>
+		
+		
+		
+	</ul>
+</div>
+</div>
+	
+
+</div>
+	
+	
+	
+	
+<div class="footer">
+	
+	
+	<div class="logo"><img src="logo.PNG" width="100%" height="100%"></div>
+	<div class="Connect"><br><br><br><b>QUICK LINKS</b><br><br>
+REFERRAL PROGRAM<br>
+WHY TIGER?<br>
+VIDEOS<br>
+REVIEWS<br>
+<br>
+	</div>
+	<div class="contact">
+	  <p><br><br>
+	    <b>CONTACT</b><br>
+	    <br>
+	    WHATSAPP MESSAGING:<br>
+	    +971225363647</p>
+	  <p>United Arab Emirates&nbsp;</p>
+	
+	
+	
+	
+	
+	
+	</div>
+	
+	
+	
+</div>
+</body>
+</html>
